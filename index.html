@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Daddy ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: "Poppins", sans-serif;
+            color: #3b2630;
+            background: #fff8f8;
+        }
+
+
+        /* OPENING */
+
+        .hero {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 30px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff0f3,
+                    #ffe0e8,
+                    #fff7f8
+                );
+        }
+
+
+        .hero-content {
+            max-width: 750px;
+
+            animation: fadeUp 1.5s ease;
+        }
+
+
+        .small-text {
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 13px;
+
+            margin-bottom: 25px;
+        }
+
+
+        .hero h1 {
+            font-family: "Great Vibes", cursive;
+
+            font-size: clamp(65px, 10vw, 120px);
+
+            font-weight: 400;
+
+            line-height: 1;
+        }
+
+
+        .hero h2 {
+            font-size: clamp(40px, 7vw, 70px);
+
+            margin: 15px 0;
+        }
+
+
+        .intro {
+            font-size: 17px;
+
+            max-width: 550px;
+
+            margin: 25px auto 35px;
+
+            line-height: 1.8;
+        }
+
+
+        button {
+            border: none;
+
+            padding: 15px 32px;
+
+            border-radius: 50px;
+
+            background: #3b2630;
+
+            color: white;
+
+            font-family: inherit;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+
+        button:hover {
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 10px 25px rgba(0,0,0,0.2);
+        }
+
+
+        /* GENERAL */
+
+        .section,
+        .photo-section,
+        .letter-section,
+        .cake-section,
+        .final-section {
+
+            padding: 100px 8%;
+
+            text-align: center;
+        }
+
+
+        .section-label {
+
+            font-size: 12px;
+
+            letter-spacing: 4px;
+
+            font-weight: 600;
+
+            margin-bottom: 15px;
+        }
+
+
+        .section h2,
+        .photo-section h2,
+        .letter-section h2,
+        .cake-section h2 {
+
+            font-size: clamp(32px, 5vw, 55px);
+
+            margin-bottom: 50px;
+        }
+
+
+        /* THANK YOU CARDS */
+
+        .cards {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .card {
+
+            background: white;
+
+            padding: 40px 28px;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 10px 35px
+                rgba(70,30,40,0.08);
+
+            transition: 0.3s;
+        }
+
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+
+        .icon {
+            font-size: 45px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .card h3 {
+            margin-bottom: 15px;
+
+            font-size: 21px;
+        }
+
+
+        .card p {
+
+            line-height: 1.8;
+
+            font-size: 14px;
+        }
+
+
+        /* MEMORIES */
+
+        .photo-section {
+
+            background: #fff0f3;
+        }
+
+
+        .photo-grid {
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .photo-card {
+
+            height: 350px;
+
+            overflow: hidden;
+
+            border-radius: 25px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffd7df,
+                    #f4b9c5
+                );
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        .photo-card img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+        }
+
+
+        .photo-placeholder {
+
+            text-align: center;
+
+            font-size: 50px;
+        }
+
+
+        .photo-placeholder p {
+
+            font-size: 14px;
+
+            margin-top: 10px;
+        }
+
+
+        .photo-note {
+
+            margin-top: 30px;
+
+            font-style: italic;
+        }
+
+
+        /* LETTER */
+
+        .letter-section {
+
+            background: white;
+        }
+
+
+        .letter {
+
+            max-width: 780px;
+
+            margin: auto;
+
+            padding: 60px;
+
+            background: #fff8f3;
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 15px 50px
+                rgba(60,30,30,0.08);
+        }
+
+
+        .letter h2 {
+
+            font-family: "Great Vibes", cursive;
+
+            font-size: 60px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .letter p:not(.section-label) {
+
+            line-height: 2;
+
+            margin-bottom: 22px;
+
+            font-size: 16px;
+        }
+
+
+        .love-line {
+
+            font-weight: 600;
+        }
+
+
+        .signature {
+
+            margin-top: 35px;
+
+            line-height: 1.8;
+        }
+
+
+        .signature span {
+
+            font-family: "Great Vibes", cursive;
+
+            font-size: 38px;
+        }
+
+
+        /* CAKE */
+
+        .cake-section {
+
+            background: #fff0f3;
+        }
+
+
+        .cake {
+
+            width: 280px;
+
+            margin: 80px auto 50px;
+
+            position: relative;
+        }
+
+
+        .cake-bottom,
+        .cake-middle,
+        .cake-top {
+
+            margin: auto;
+
+            border-radius: 15px;
+        }
+
+
+        .cake-bottom {
+
+            width: 280px;
+
+            height: 80px;
+
+            background: #8f4f5e;
+        }
+
+
+        .cake-middle {
+
+            width: 240px;
+
+            height: 70px;
+
+            background: #b86f7d;
+        }
+
+
+        .cake-top {
+
+            width: 210px;
+
+            height: 65px;
+
+            background: #d99aa7;
+        }
+
+
+        .candles {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 35px;
+
+            position: absolute;
+
+            width: 100%;
+
+            top: -85px;
+        }
+
+
+        .candle {
+
+            width: 15px;
+
+            height: 65px;
+
+            background: #3b2630;
+
+            border-radius: 5px;
+
+            position: relative;
+        }
+
+
+        .flame {
+
+            width: 18px;
+
+            height: 25px;
+
+            background: #ff9f43;
+
+            border-radius: 50%;
+
+            position: absolute;
+
+            top: -28px;
+
+            left: -1px;
+
+            animation: flicker 0.6s infinite alternate;
+        }
+
+
+        #wishMessage {
+
+            margin-top: 25px;
+
+            font-size: 20px;
+
+            font-weight: 600;
+        }
+
+
+        /* FINAL */
+
+        .final-section {
+
+            min-height: 80vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #3b2630,
+                    #5c3440
+                );
+
+            color: white;
+        }
+
+
+        .final-content {
+
+            max-width: 700px;
+        }
+
+
+        .big-heart {
+
+            font-size: 80px;
+
+            animation:
+                heartbeat 1.3s infinite;
+        }
+
+
+        .final-content h2 {
+
+            font-family: "Great Vibes", cursive;
+
+            font-size: clamp(55px, 8vw, 85px);
+
+            font-weight: 400;
+
+            margin: 20px 0;
+        }
+
+
+        .final-content p {
+
+            line-height: 1.8;
+
+            font-size: 17px;
+        }
+
+
+        .final-content h3 {
+
+            font-size: 28px;
+
+            margin-top: 30px;
+        }
+
+
+        .date {
+
+            margin-top: 40px;
+
+            opacity: 0.7;
+
+            font-size: 13px !important;
+        }
+
+
+        .hidden {
+            display: none;
+        }
+
+
+        /* ANIMATIONS */
+
+        @keyframes fadeUp {
+
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        @keyframes heartbeat {
+
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.15);
+            }
+        }
+
+
+        @keyframes flicker {
+
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.15);
+            }
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .cards,
+            .photo-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .photo-card {
+
+                height: 400px;
+            }
+
+
+            .letter {
+
+                padding: 35px 25px;
+            }
+
+
+            .section,
+            .photo-section,
+            .letter-section,
+            .cake-section,
+            .final-section {
+
+                padding: 75px 6%;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- OPENING -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-text">
+                A little surprise made with love ❤️
+            </p>
+
+            <h1>
+                Happy Birthday
+            </h1>
+
+            <h2>
+                Daddy 🎂
+            </h2>
+
+            <p class="intro">
+                Today is all about celebrating the most special
+                person in my life.
+            </p>
+
+            <button onclick="startSurprise()">
+                Start the Surprise ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MAIN -->
+
+    <main id="surprise" class="hidden">
+
+
+        <!-- THANK YOU -->
+
+        <section class="section">
+
+            <p class="section-label">
+                FROM MY HEART
+            </p>
+
+            <h2>
+                Three Things I'm Thankful For ❤️
+            </h2>
+
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <div class="icon">
+                        🤍
+                    </div>
+
+                    <h3>
+                        Your Support
+                    </h3>
+
+                    <p>
+                        I’m thankful to you for always supporting
+                        me and believing in me.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icon">
+                        🌟
+                    </div>
+
+                    <h3>
+                        Your Sacrifices
+                    </h3>
+
+                    <p>
+                        I’m thankful for all the sacrifices you make
+                        to give me a better life.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icon">
+                        ❤️
+                    </div>
+
+                    <h3>
+                        Your Love
+                    </h3>
+
+                    <p>
+                        I’m thankful for your love, guidance,
+                        and for always being there for me whenever
+                        I need you.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- MEMORIES -->
+
+        <section class="photo-section">
+
+            <p class="section-label">
+                OUR MEMORIES
+            </p>
+
+            <h2>
+                Beautiful Memories 📸
+            </h2>
+
+
+            <div class="photo-grid">
+
+
+                <div class="photo-card">
+
+                    <img src="photo1.jpeg"
+                        alt="Daddy Memory 1"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+
+                    <div class="photo-placeholder"
+                        style="display:none;">
+
+                        📸
+
+                        <p>
+                            Add Daddy's Photo 1
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="photo-card">
+
+                    <img src="photo2.jpeg"
+                        alt="Daddy Memory 2"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+
+                    <div class="photo-placeholder"
+                        style="display:none;">
+
+                        📸
+
+                        <p>
+                            Add Daddy's Photo 2
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="photo-card">
+
+                    <img src="photo3.jpeg"
+                        alt="Daddy Memory 3"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+
+                    <div class="photo-placeholder"
+                        style="display:none;">
+
+                        📸
+
+                        <p>
+                            Add Daddy's Photo 3
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <p class="photo-note">
+                Every memory with you is something I will always treasure. ❤️
+            </p>
+
+        </section>
+
+
+
+        <!-- PERSONAL LETTER -->
+
+        <section class="letter-section">
+
+
+            <div class="letter">
+
+                <p class="section-label">
+                    A LETTER FOR YOU
+                </p>
+
+
+                <h2>
+                    Dear Daddy, ❤️
+                </h2>
+
+
+                <p>
+                    Today is not just your birthday.
+                    It is a day to celebrate one of the most
+                    important people in my life — you.
+                </p>
+
+
+                <p>
+                    You have always been there for me,
+                    supporting me, encouraging me, and believing
+                    in me even when I doubted myself.
+                </p>
+
+
+                <p>
+                    Everything you do for our family and every
+                    sacrifice you make means more to me than
+                    I can ever explain in words.
+                </p>
+
+
+                <p>
+                    Your love gives me strength, your words guide me,
+                    and your presence makes me feel safe and confident.
+                </p>
+
+
+                <p>
+                    I know I may not always say it, but I notice
+                    everything you do for me. I am truly grateful
+                    and lucky to have you as my Daddy.
+                </p>
+
+
+                <p class="love-line">
+                    I hope I can make you proud and give you many
+                    reasons to smile, just like you have always
+                    done for me. ❤️
+                </p>
+
+
+                <p>
+                    On your special day, I just want to say...
+                    <strong>Thank you for being you.</strong>
+                </p>
+
+
+                <div class="signature">
+
+                    With all my love,
+
+                    <br>
+
+                    <span>
+                        Your Daughter ❤️
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CAKE -->
+
+        <section class="cake-section">
+
+            <p class="section-label">
+                MAKE A WISH
+            </p>
+
+            <h2>
+                Birthday Cake 🎂
+            </h2>
+
+
+            <div class="cake">
+
+
+                <div class="candles">
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="cake-top"></div>
+
+                <div class="cake-middle"></div>
+
+                <div class="cake-bottom"></div>
+
+
+            </div>
+
+
+            <button onclick="blowCandles()">
+                Blow the Candles 🕯️
+            </button>
+
+
+            <p id="wishMessage"></p>
+
+        </section>
+
+
+
+        <!-- FINAL -->
+
+        <section class="final-section">
+
+            <div class="final-content">
+
+                <div class="big-heart">
+                    ❤️
+                </div>
+
+
+                <h2>
+                    Happy Birthday, Daddy!
+                </h2>
+
+
+                <p>
+                    Thank you for being my strength,
+                    my guide, and my biggest supporter.
+                </p>
+
+
+                <p>
+                    I’m so lucky to have you as my Daddy. ❤️
+                </p>
+
+
+                <h3>
+                    I love you, Daddy! 🥹❤️
+                </h3>
+
+
+                <p class="date">
+                    October 6, 2026
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script>
+
+        function startSurprise() {
+
+            const surprise =
+                document.getElementById("surprise");
+
+            surprise.classList.remove("hidden");
+
+            surprise.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+
+        function blowCandles() {
+
+            const flames =
+                document.querySelectorAll(".flame");
+
+            flames.forEach(function(flame) {
+
+                flame.style.display = "none";
+
+            });
+
+
+            document.getElementById("wishMessage")
+                .innerHTML =
+                "✨ Wish made! Happy Birthday, Daddy! ❤️🎂";
+        }
+
+    </script>
+
+
+</body>
+
+</html>
